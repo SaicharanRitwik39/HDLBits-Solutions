@@ -5,7 +5,7 @@ module top_module (
     output [7:0] q
 );
     always @ (posedge clk) begin
-        if (reset)
-        q <= 8'b0;
+        if (reset) q <= 8'b0;
         else q <= d;
+    end    
 endmodule
